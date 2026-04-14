@@ -61,7 +61,6 @@ export default function Dashboard() {
       <Header />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
-        {/* Header Section */}
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
             Job Tracker
@@ -69,7 +68,7 @@ export default function Dashboard() {
           <p className="text-gray-600 dark:text-gray-400 mt-2">Manage and track your job applications</p>
         </div>
 
-        {/* Stats Section */}
+        {/* Stats */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-5 shadow-sm">
             <div className="flex items-center justify-between">
@@ -131,7 +130,7 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* Add Job Form */}
+        {/* Add Job */}
         <div className="bg-white dark:bg-gray-800 rounded-2xl p-5 mb-8">
           <h2 className="font-semibold text-gray-900 dark:text-white mb-3">Add New Job</h2>
           <div className="flex flex-col sm:flex-row gap-3">
@@ -169,13 +168,12 @@ export default function Dashboard() {
         {filtered.length === 0 ? (
           <div className="text-center py-16 bg-white dark:bg-gray-800 rounded-2xl">
             <div className="text-6xl mb-4">🎯</div>
-            <p className="text-gray-600 dark:text-gray-400">No jobs found. Start by adding your first job!</p>
+            <p className="text-gray-600 dark:text-gray-400">No jobs found. Add your first job!</p>
           </div>
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {filtered.map(job => (
               <div key={job._id} className="bg-white dark:bg-gray-800 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all">
-                
                 <div className="flex justify-between items-start mb-3">
                   <div className="flex-1">
                     <h3 className="font-semibold text-gray-900 dark:text-white text-lg">{job.title}</h3>
