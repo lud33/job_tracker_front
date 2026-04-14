@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://job-tracker-backend-4o7a.onrender.com/api",
 });
 
 API.interceptors.request.use((req) => {
@@ -12,4 +12,4 @@ API.interceptors.request.use((req) => {
   return req;
 });
 
-export default API;
+export default API; jobs
