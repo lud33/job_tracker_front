@@ -1,8 +1,8 @@
 import { useState } from "react";
 import API from "@/lib/api";
 import { useNavigate } from "react-router-dom";
-import { Input, Button } from "@/components/ui";
-
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 export default function Register() {
   const navigate = useNavigate();
   const [form, setForm] = useState({ name:"", email:"", password:"" });
