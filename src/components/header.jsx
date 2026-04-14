@@ -36,26 +36,42 @@ export const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
+    <header className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 transition-all duration-300">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-3">
         <h1
-          className="font-bold text-xl cursor-pointer text-gray-900 dark:text-white"
+          className="font-bold text-xl cursor-pointer text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-200"
           onClick={() => navigate("/")}
         >
           🚀 Job Tracker
         </h1>
 
         <div className="flex gap-2">
-          <Button variant="ghost" onClick={() => navigate("/")}>
+          <Button 
+            variant="ghost" 
+            onClick={() => navigate("/")}
+            className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200"
+          >
             Dashboard
           </Button>
-          <Button variant="ghost" onClick={() => navigate("/settings")}>
+          <Button 
+            variant="ghost" 
+            onClick={() => navigate("/settings")}
+            className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200"
+          >
             Settings
           </Button>
-          <Button variant="ghost" onClick={toggleDark}>
+          <Button 
+            variant="ghost" 
+            onClick={toggleDark}
+            className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200"
+          >
             {isDark ? "☀️" : "🌙"}
           </Button>
-          <Button variant="destructive" onClick={logout}>
+          <Button 
+            variant="destructive" 
+            onClick={logout}
+            className="bg-red-600 hover:bg-red-700 text-white transition-all duration-200"
+          >
             Logout
           </Button>
         </div>
