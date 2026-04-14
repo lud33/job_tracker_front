@@ -12,4 +12,4 @@ API.interceptors.request.use((req) => {
   return req;
 });
 
-export default API; jobs
+export default API; 
