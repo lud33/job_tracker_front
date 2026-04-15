@@ -8,7 +8,7 @@ import { Toaster } from "sonner";
 
 export default function App(){
   return(
-    <BrowserRouter>
+    <Router>  {/* ← Change this from BrowserRouter to Router */}
       <Toaster position="top-right" richColors />
       <Routes>
         <Route path="/login" element={<Login/>}/>
@@ -22,6 +22,6 @@ export default function App(){
           <ProtectedRoute><Settings/></ProtectedRoute>
         }/>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
