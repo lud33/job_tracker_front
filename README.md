@@ -1,16 +1,42 @@
-# React + Vite
+# Job Tracker Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive job application tracking dashboard built with React, Tailwind CSS, and shadcn/ui components.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **User Authentication** - Login and registration with JWT
+- **Job Management** - Add, update, and delete job applications
+- **Status Tracking** - Track jobs through Applied → Interview → Offer stages
+- **Dashboard Statistics** - Visual overview with animated counters
+- **Search & Filter** - Search by title/company and filter by status
+- **User Settings** - Profile management and notification preferences
+- **Dark Mode** - Toggle between light and dark themes (persists in localStorage)
+- **Email Notifications** - Real-time alerts and weekly digest controls
+- **Responsive Design** - Works perfectly on desktop, tablet, and mobile
+- **Glassmorphism UI** - Modern frosted glass effect with animated backgrounds
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: React 18
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS 3
+- **UI Components**: shadcn/ui
+- **Routing**: React Router DOM v6
+- **HTTP Client**: Axios
+- **Notifications**: Sonner (toast messages)
+- **Icons**: Lucide React
+- **State Management**: React Hooks (useState, useEffect)
 
-## Expanding the ESLint configuration
+## 📋 Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js (v18 or higher)
+- npm or yarn package manager
+- Backend API running (see backend README)
+
+## 🚀 Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/job-tracker-frontend.git
+cd job-tracker-frontend
